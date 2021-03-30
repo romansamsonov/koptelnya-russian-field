@@ -1,0 +1,81 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+
+  &_small {
+    max-width: 860px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 1240px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &_small {
+      max-width: 860px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 860px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+.grid-container {
+  display: grid;
+
+  &[data-column="3"] {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 60px 20px;
+  }
+
+  &[data-column="5"] {
+    grid-template-columns: repeat(auto-fill, 216px);
+    grid-gap: 50px 40px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-container[data-column="3"] {
+    grid-gap: 40px 20px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .grid-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid-container[data-column="3"] {
+    grid-gap: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

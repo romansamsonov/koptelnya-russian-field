@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no, viewport-fit=cover">
+    <title>Main Page</title>
+
+    <!-- Start Safari Nomodule Fix -->
+    <script async>(function () {
+        var a = document, b = a.createElement("script");
+        if (!("noModule" in b) && "onbeforeload" in b) {
+            var c = !1;
+            a.addEventListener("beforeload", function (a) {
+                if (a.target === b) c = !0; else if (!a.target.hasAttribute("nomodule") || !c) return;
+                a.preventDefault()
+            }, !0), b.type = "module", b.src = ".", a.head.appendChild(b), b.remove()
+        }
+    })();</script>
+    <!-- End Safari Nomodule Fix -->
+
+    <!-- font-preload:woff2 -->
+    <!-- endinject -->
+
+    <!-- css-preload:css -->
+    <!-- endinject -->
+
+    <!-- modulepreload:js -->
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+<body>
+<div style="height: 0; width: 0; position: absolute; visibility: hidden">
+    <!-- inject:svg -->
+    <!-- endinject -->
+</div>
+
+<header class="header">
+    <div class="hamburger"></div>
+    <a href="" class="header__logo logo">
+        <img src="svg/logo.svg" width="155" height="36" alt="Логотип компании Русское поле">
+    </a>
+    <ul class="nav">
+        <li class="nav__item">
+            <a class="nav__link" href="">Каталог</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="">Прайс-лист</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="">О компании</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="">Контакты</a>
+        </li>
+        <li class="nav__item">
+            <a href="tel:88362455911" class="nav__link nav__link_phone">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.0404 13.6386L15.2125 13.3157C14.5333 13.2378 13.8653 13.4716 13.3866 13.9503L11.338 15.9989C8.18723 14.3956 5.60425 11.8238 4.00102 8.66188L6.06072 6.60218C6.53947 6.12344 6.77327 5.45542 6.69533 4.77628L6.37246 1.97063C6.23886 0.846147 5.29251 0 4.15689 0H2.23079C0.972706 0 -0.0738448 1.04655 0.00408987 2.30464C0.594166 11.8127 8.19836 19.4057 17.6953 19.9958C18.9533 20.0737 19.9999 19.0272 19.9999 17.7691V15.843C20.011 14.7185 19.1649 13.7722 18.0404 13.6386Z" fill="var(--basic-darkgray)" />
+                </svg>
+                8 (8362) 45-59-11
+            </a>
+        </li>
+    </ul>
+    <div class="header__info">
+        <form action="" method="get" class="search">
+            <label for="search" class="search__label"></label>
+            <input id="search" class="search__input" type="search" name="search" placeholder="Поиск:">
+            <button class="search__button" type="submit">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.2 1.6C4.10721 1.6 1.6 4.10721 1.6 7.2C1.6 10.2928 4.10721 12.8 7.2 12.8C10.2928 12.8 12.8 10.2928 12.8 7.2C12.8 4.10721 10.2928 1.6 7.2 1.6ZM0 7.2C0 3.22355 3.22355 0 7.2 0C11.1765 0 14.4 3.22355 14.4 7.2C14.4 11.1765 11.1765 14.4 7.2 14.4C3.22355 14.4 0 11.1765 0 7.2Z" fill="var(--basic-gray)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1542 11.1543C11.4667 10.8419 11.9732 10.8419 12.2856 11.1543L15.7656 14.6343C16.078 14.9468 16.078 15.4533 15.7656 15.7657C15.4532 16.0781 14.9467 16.0781 14.6342 15.7657L11.1542 12.2857C10.8418 11.9733 10.8418 11.4667 11.1542 11.1543Z" fill="var(--basic-gray)" />
+                </svg>
+            </button>
+        </form>
+        <a href="#" class="header__cart">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.6665 14.6087C4.6665 13.8403 5.26346 13.2174 5.99984 13.2174C6.73622 13.2174 7.33317 13.8403 7.33317 14.6087C7.33317 15.3771 6.73622 16 5.99984 16C5.26346 16 4.6665 15.3771 4.6665 14.6087Z" fill="var(--basic-gray)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14.6087C12 13.8403 12.597 13.2174 13.3333 13.2174C14.0697 13.2174 14.6667 13.8403 14.6667 14.6087C14.6667 15.3771 14.0697 16 13.3333 16C12.597 16 12 15.3771 12 14.6087Z" fill="var(--basic-gray)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.695652C0 0.311454 0.298477 0 0.666667 0H3.33333C3.65108 0 3.92467 0.234007 3.98704 0.559126L4.54695 3.47826H15.3333C15.532 3.47826 15.7203 3.57073 15.847 3.73047C15.9736 3.89021 16.0254 4.10058 15.9882 4.30423L14.9206 10.146C14.8291 10.6264 14.5787 11.0579 14.213 11.3651C13.8492 11.6707 13.3944 11.8337 12.9276 11.8261H6.4591C5.99225 11.8337 5.53747 11.6707 5.17365 11.3651C4.80817 11.058 4.55776 10.6267 4.46622 10.1466C4.46618 10.1464 4.46626 10.1467 4.46622 10.1466L3.35253 4.34031C3.34801 4.32111 3.34425 4.30159 3.3413 4.28179L2.78688 1.3913H0.666667C0.298477 1.3913 0 1.07985 0 0.695652ZM4.81382 4.86957L5.77389 9.87491C5.80437 10.035 5.88786 10.1789 6.00974 10.2813C6.13162 10.3837 6.28413 10.438 6.44056 10.4349L6.45333 10.4348H12.9333L12.9461 10.4349C13.1025 10.438 13.255 10.3837 13.3769 10.2813C13.4982 10.1794 13.5815 10.0364 13.6123 9.87714L14.5275 4.86957H4.81382Z" fill="var(--basic-gray)" />
+            </svg>
+        </a>
+        <a href="tel:88362455911" class="header__button button button_color-green">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0404 13.6386L15.2125 13.3157C14.5333 13.2378 13.8653 13.4716 13.3866 13.9503L11.338 15.9989C8.18723 14.3956 5.60425 11.8238 4.00102 8.66188L6.06072 6.60218C6.53947 6.12344 6.77327 5.45542 6.69533 4.77628L6.37246 1.97063C6.23886 0.846147 5.29251 0 4.15689 0H2.23079C0.972706 0 -0.0738448 1.04655 0.00408987 2.30464C0.594166 11.8127 8.19836 19.4057 17.6953 19.9958C18.9533 20.0737 19.9999 19.0272 19.9999 17.7691V15.843C20.011 14.7185 19.1649 13.7722 18.0404 13.6386Z" fill="var(--basic-darkgray)" />
+            </svg>
+            8 (8362) 45-59-11
+        </a>
+    </div>
+</header>
+
+<main>
+    <div class="catalog">
+        <aside class="sidebar">
+            <button class="sidebar__button" type="button">
+                Каталог
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1L7 6.5L13 1" stroke="#4F4F4F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <ul class="sidebar__list">
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Вика</a>
+                </li>
+                <li class="sidebar__dropdown">
+                    <button class="sidebar__dropdown-button" type="button">
+                        Клевер
+                        <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L7 6.5L13 1" stroke="#4F4F4F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <ul class="sidebar__dropdown-list">
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__link sidebar__link_dropdown" href="">Клевер луговой</a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__link sidebar__link_dropdown" href="">Клевер ползучий (белый)</a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__link sidebar__link_dropdown" href="">Клевер гибридный (розовый)</a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__link sidebar__link_dropdown" href="">Клевер персидский</a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__link sidebar__link_dropdown" href="">Клевер александрийский</a>
+                        </li>
+                        <li class="sidebar__list-item">
+                            <a class="sidebar__link sidebar__link_dropdown" href="">Клевер инкарнатный</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Лядвенец рогатый</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Люцерна</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Козлятник восточный</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Донник</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Эспарцет песчаный</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Ежа сборная</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Райграс</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Кострец безострый</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Овсяница</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Тимофеевка луговая</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Фестулолиум</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Двукисточник</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Бекмания обыкновенная</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Мятлик</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Полевица</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Пырей</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Житняк</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Лисохвост</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Кукуруза</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Суданская трава</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Горох</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Сорго-суданковый гибрид</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Люпин</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Соя</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Чечевица</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Бобы кормовые</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Овес</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Пшеница</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Рожь</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Ячмень</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Полба</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Тритикале</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Гречиха</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Просо</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Нут</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Сурепица</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Рапс</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Рыжик</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Редька масличная</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Горчица</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Лен</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Свекла</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Конопля</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Пайза</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Подсолнечник</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Сорго</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Расторопша</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Сафлор</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Фацелия</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Синяк</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Мордовник</a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a class="sidebar__link" href="">Пелюшка</a>
+                </li>
+            </ul>
+        </aside>
+        <div class="content">
+            <section class="hero hero_no-bg">
+                <div class="hero__catalog-grid">
+                    <div class="hero__description">
+                        <h1 class="hero__title">Клевер луговой</h1>
+                        <h2 class="section__subtitle">Репродукция:</h2>
+                        <h2 class="section__subtitle">Описание растения:</h2>
+                        <p class="section__text">
+                            Род медоносных растений, мёд из которого относится к числу лучших.
+                        </p>
+                        <p class="section__text">
+                            Клевер принадлежит семейству Бобовые, растения которого часто используются в пищу, фиксируют атмосферный азот и используются при рекультивации земель.
+                        </p>
+                    </div>
+                    <img class="hero__image" src="images/meadow-clover-product.jpg" width="368" height="506" alt="Клевер луговой">
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="catalog__title">Компания «Русское поле» предлагает красный клевер (семена) следующих сортов:</h2>
+                <ul class="catalog__related-products">
+                    <li class="related-product-card">
+                        <img class="related-product-card__image" src="images/clover-white-sort.jpg" width="243" height="161" alt="Клевер белый (ползучий)">
+                        <h3 class="related-product-card__title">Клевер белый (ползучий)</h3>
+                        <p class="related-product-card__description">
+                            Зимостойкое растение, используется как кормовая и медоносная культура. Свето- и влаголюбивое, растёт только на кислых почвах.
+                        </p>
+                        <p class="related-product-card__price">Цена:<span class="related-product-card__description related-product-card__description_with-padding">уточняйте у менеджера</span></p>
+                        <a class="button button_color-green" href="">Перейти в корзину</a>
+                    </li>
+                    <li class="related-product-card">
+                        <img class="related-product-card__image" src="images/meadow-clover-sort.jpg" width="243" height="188" alt="Клевер луговой">
+                        <h3 class="related-product-card__title">Клевер луговой</h3>
+                        <p class="related-product-card__description">
+                            Медоносное и кормовое растение. Обладает противовоспалительным, бактерицидным, отхаркивающим, мочегонным, потогонным, противосклеротическим свойствами.
+                        </p>
+                        <p class="related-product-card__price">Цена:<span class="related-product-card__description related-product-card__description_with-padding">уточняйте у менеджера</span></p>
+                        <a class="related-product-card__button button button_color-transparent-green" href="">
+                            Добавить в корзину
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.1709 17.4996C6.1709 16.5791 6.91477 15.8329 7.83237 15.8329C8.74998 15.8329 9.49385 16.5791 9.49385 17.4996C9.49385 18.42 8.74998 19.1662 7.83237 19.1662C6.91477 19.1662 6.1709 18.42 6.1709 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3086 17.4996C15.3086 16.5791 16.0525 15.8329 16.9701 15.8329C17.8877 15.8329 18.6315 16.5791 18.6315 17.4996C18.6315 18.42 17.8877 19.1662 16.9701 19.1662C16.0525 19.1662 15.3086 18.42 15.3086 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.355469 0.832845C0.355469 0.372608 0.727403 -0.000488281 1.18621 -0.000488281H4.50916C4.90511 -0.000488281 5.24603 0.279833 5.32374 0.669298L6.02146 4.16618H19.4624C19.71 4.16618 19.9447 4.27695 20.1025 4.46831C20.2603 4.65966 20.3248 4.91166 20.2785 5.15562L18.9481 12.1535C18.8341 12.729 18.522 13.246 18.0664 13.6139C17.613 13.98 17.0463 14.1753 16.4646 14.1662H8.40419C7.82245 14.1753 7.25574 13.98 6.80239 13.6139C6.34695 13.2461 6.03492 12.7294 5.92085 12.1542C5.9208 12.154 5.9209 12.1545 5.92085 12.1542L4.53307 5.19885C4.52744 5.17584 4.52276 5.15246 4.51908 5.12874L3.82821 1.66618H1.18621C0.727403 1.66618 0.355469 1.29308 0.355469 0.832845ZM6.354 5.83285L7.55035 11.8288C7.58834 12.0207 7.69237 12.193 7.84424 12.3156C7.99612 12.4383 8.18616 12.5034 8.38109 12.4997L8.39701 12.4995H16.4718L16.4877 12.4997C16.6826 12.5034 16.8727 12.4383 17.0245 12.3156C17.1757 12.1936 17.2795 12.0223 17.3179 11.8315L18.4583 5.83285H6.354Z" fill="var(--basic-green)"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="19.9377" height="20" fill="white" transform="translate(0.355469 -0.000488281)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="related-product-card">
+                        <h3 class="related-product-card__title">Клевер розовый</h3>
+                        <p class="related-product-card__description">
+                            Морозостоек, к почвам не требователен, предпочитает глинистые, суглинистые и супесчаные почвы, хорошо растет на болотах.
+                        </p>
+                        <p class="related-product-card__price">Цена:<span class="related-product-card__description related-product-card__description_with-padding">уточняйте у менеджера</span></p>
+                        <a class="related-product-card__button button button_color-transparent-green" href="">
+                            Добавить в корзину
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.1709 17.4996C6.1709 16.5791 6.91477 15.8329 7.83237 15.8329C8.74998 15.8329 9.49385 16.5791 9.49385 17.4996C9.49385 18.42 8.74998 19.1662 7.83237 19.1662C6.91477 19.1662 6.1709 18.42 6.1709 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3086 17.4996C15.3086 16.5791 16.0525 15.8329 16.9701 15.8329C17.8877 15.8329 18.6315 16.5791 18.6315 17.4996C18.6315 18.42 17.8877 19.1662 16.9701 19.1662C16.0525 19.1662 15.3086 18.42 15.3086 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.355469 0.832845C0.355469 0.372608 0.727403 -0.000488281 1.18621 -0.000488281H4.50916C4.90511 -0.000488281 5.24603 0.279833 5.32374 0.669298L6.02146 4.16618H19.4624C19.71 4.16618 19.9447 4.27695 20.1025 4.46831C20.2603 4.65966 20.3248 4.91166 20.2785 5.15562L18.9481 12.1535C18.8341 12.729 18.522 13.246 18.0664 13.6139C17.613 13.98 17.0463 14.1753 16.4646 14.1662H8.40419C7.82245 14.1753 7.25574 13.98 6.80239 13.6139C6.34695 13.2461 6.03492 12.7294 5.92085 12.1542C5.9208 12.154 5.9209 12.1545 5.92085 12.1542L4.53307 5.19885C4.52744 5.17584 4.52276 5.15246 4.51908 5.12874L3.82821 1.66618H1.18621C0.727403 1.66618 0.355469 1.29308 0.355469 0.832845ZM6.354 5.83285L7.55035 11.8288C7.58834 12.0207 7.69237 12.193 7.84424 12.3156C7.99612 12.4383 8.18616 12.5034 8.38109 12.4997L8.39701 12.4995H16.4718L16.4877 12.4997C16.6826 12.5034 16.8727 12.4383 17.0245 12.3156C17.1757 12.1936 17.2795 12.0223 17.3179 11.8315L18.4583 5.83285H6.354Z" fill="var(--basic-green)"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="19.9377" height="20" fill="white" transform="translate(0.355469 -0.000488281)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="related-product-card">
+                        <h3 class="related-product-card__title">Клевер персидский</h3>
+                        <p class="related-product-card__description">
+                            Высокоурожайный сорт клевера. Вымерзает зимой, оставляя после себя рыхлую растительную почву.
+                        </p>
+                        <p class="related-product-card__price">Цена:<span class="related-product-card__description related-product-card__description_with-padding">уточняйте у менеджера</span></p>
+                        <a class="related-product-card__button button button_color-transparent-green" href="">
+                            Добавить в корзину
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.1709 17.4996C6.1709 16.5791 6.91477 15.8329 7.83237 15.8329C8.74998 15.8329 9.49385 16.5791 9.49385 17.4996C9.49385 18.42 8.74998 19.1662 7.83237 19.1662C6.91477 19.1662 6.1709 18.42 6.1709 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3086 17.4996C15.3086 16.5791 16.0525 15.8329 16.9701 15.8329C17.8877 15.8329 18.6315 16.5791 18.6315 17.4996C18.6315 18.42 17.8877 19.1662 16.9701 19.1662C16.0525 19.1662 15.3086 18.42 15.3086 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.355469 0.832845C0.355469 0.372608 0.727403 -0.000488281 1.18621 -0.000488281H4.50916C4.90511 -0.000488281 5.24603 0.279833 5.32374 0.669298L6.02146 4.16618H19.4624C19.71 4.16618 19.9447 4.27695 20.1025 4.46831C20.2603 4.65966 20.3248 4.91166 20.2785 5.15562L18.9481 12.1535C18.8341 12.729 18.522 13.246 18.0664 13.6139C17.613 13.98 17.0463 14.1753 16.4646 14.1662H8.40419C7.82245 14.1753 7.25574 13.98 6.80239 13.6139C6.34695 13.2461 6.03492 12.7294 5.92085 12.1542C5.9208 12.154 5.9209 12.1545 5.92085 12.1542L4.53307 5.19885C4.52744 5.17584 4.52276 5.15246 4.51908 5.12874L3.82821 1.66618H1.18621C0.727403 1.66618 0.355469 1.29308 0.355469 0.832845ZM6.354 5.83285L7.55035 11.8288C7.58834 12.0207 7.69237 12.193 7.84424 12.3156C7.99612 12.4383 8.18616 12.5034 8.38109 12.4997L8.39701 12.4995H16.4718L16.4877 12.4997C16.6826 12.5034 16.8727 12.4383 17.0245 12.3156C17.1757 12.1936 17.2795 12.0223 17.3179 11.8315L18.4583 5.83285H6.354Z" fill="var(--basic-green)"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="19.9377" height="20" fill="white" transform="translate(0.355469 -0.000488281)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="related-product-card">
+                        <h3 class="related-product-card__title">Клевер александрийский</h3>
+                        <p class="related-product-card__description">
+                            Однолетнее растение высотой не более 70 сантиметров. За год даёт несколько укосов. Часто используется как кормовое растение.
+                        </p>
+                        <p class="related-product-card__price">Цена:<span class="related-product-card__description related-product-card__description_with-padding">уточняйте у менеджера</span></p>
+                        <a class="related-product-card__button button button_color-transparent-green" href="">
+                            Добавить в корзину
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.1709 17.4996C6.1709 16.5791 6.91477 15.8329 7.83237 15.8329C8.74998 15.8329 9.49385 16.5791 9.49385 17.4996C9.49385 18.42 8.74998 19.1662 7.83237 19.1662C6.91477 19.1662 6.1709 18.42 6.1709 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3086 17.4996C15.3086 16.5791 16.0525 15.8329 16.9701 15.8329C17.8877 15.8329 18.6315 16.5791 18.6315 17.4996C18.6315 18.42 17.8877 19.1662 16.9701 19.1662C16.0525 19.1662 15.3086 18.42 15.3086 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.355469 0.832845C0.355469 0.372608 0.727403 -0.000488281 1.18621 -0.000488281H4.50916C4.90511 -0.000488281 5.24603 0.279833 5.32374 0.669298L6.02146 4.16618H19.4624C19.71 4.16618 19.9447 4.27695 20.1025 4.46831C20.2603 4.65966 20.3248 4.91166 20.2785 5.15562L18.9481 12.1535C18.8341 12.729 18.522 13.246 18.0664 13.6139C17.613 13.98 17.0463 14.1753 16.4646 14.1662H8.40419C7.82245 14.1753 7.25574 13.98 6.80239 13.6139C6.34695 13.2461 6.03492 12.7294 5.92085 12.1542C5.9208 12.154 5.9209 12.1545 5.92085 12.1542L4.53307 5.19885C4.52744 5.17584 4.52276 5.15246 4.51908 5.12874L3.82821 1.66618H1.18621C0.727403 1.66618 0.355469 1.29308 0.355469 0.832845ZM6.354 5.83285L7.55035 11.8288C7.58834 12.0207 7.69237 12.193 7.84424 12.3156C7.99612 12.4383 8.18616 12.5034 8.38109 12.4997L8.39701 12.4995H16.4718L16.4877 12.4997C16.6826 12.5034 16.8727 12.4383 17.0245 12.3156C17.1757 12.1936 17.2795 12.0223 17.3179 11.8315L18.4583 5.83285H6.354Z" fill="var(--basic-green)"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="19.9377" height="20" fill="white" transform="translate(0.355469 -0.000488281)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="related-product-card">
+                        <h3 class="related-product-card__title">Клевер инкарнатный</h3>
+                        <p class="related-product-card__description">
+                            Быстрорастущее однолетнее растение. Используется при выращивании промежуточных культур. Способствует выработке азота. Растёт на почвах с высоким содержанием извести.
+                        </p>
+                        <p class="related-product-card__price">Цена:<span class="related-product-card__description related-product-card__description_with-padding">уточняйте у менеджера</span></p>
+                        <a class="related-product-card__button button button_color-transparent-green" href="">
+                            Добавить в корзину
+                            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.1709 17.4996C6.1709 16.5791 6.91477 15.8329 7.83237 15.8329C8.74998 15.8329 9.49385 16.5791 9.49385 17.4996C9.49385 18.42 8.74998 19.1662 7.83237 19.1662C6.91477 19.1662 6.1709 18.42 6.1709 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3086 17.4996C15.3086 16.5791 16.0525 15.8329 16.9701 15.8329C17.8877 15.8329 18.6315 16.5791 18.6315 17.4996C18.6315 18.42 17.8877 19.1662 16.9701 19.1662C16.0525 19.1662 15.3086 18.42 15.3086 17.4996Z" fill="var(--basic-green)"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.355469 0.832845C0.355469 0.372608 0.727403 -0.000488281 1.18621 -0.000488281H4.50916C4.90511 -0.000488281 5.24603 0.279833 5.32374 0.669298L6.02146 4.16618H19.4624C19.71 4.16618 19.9447 4.27695 20.1025 4.46831C20.2603 4.65966 20.3248 4.91166 20.2785 5.15562L18.9481 12.1535C18.8341 12.729 18.522 13.246 18.0664 13.6139C17.613 13.98 17.0463 14.1753 16.4646 14.1662H8.40419C7.82245 14.1753 7.25574 13.98 6.80239 13.6139C6.34695 13.2461 6.03492 12.7294 5.92085 12.1542C5.9208 12.154 5.9209 12.1545 5.92085 12.1542L4.53307 5.19885C4.52744 5.17584 4.52276 5.15246 4.51908 5.12874L3.82821 1.66618H1.18621C0.727403 1.66618 0.355469 1.29308 0.355469 0.832845ZM6.354 5.83285L7.55035 11.8288C7.58834 12.0207 7.69237 12.193 7.84424 12.3156C7.99612 12.4383 8.18616 12.5034 8.38109 12.4997L8.39701 12.4995H16.4718L16.4877 12.4997C16.6826 12.5034 16.8727 12.4383 17.0245 12.3156C17.1757 12.1936 17.2795 12.0223 17.3179 11.8315L18.4583 5.83285H6.354Z" fill="var(--basic-green)"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0">
+                                        <rect width="19.9377" height="20" fill="white" transform="translate(0.355469 -0.000488281)"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <p class="section__text section__text_bold">
+                    Мы занимаемся оптовыми поставками семян клевера лугового и других трав.Обращайтесь! Сотрудничаем с юридическими и физическими лицами, осуществляем доставку по всей России.
+                </p>
+            </section>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__container">
+            <div class="footer__contacts">
+                <a href="" class="footer__logo logo">
+                    <img src="svg/logo.svg" width="155" height="36" alt="Логотип компании Русское поле">
+                </a>
+                <h3 class="visually-hidden">Контактная информация</h3>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2222 15.2681L16.6822 14.9781C16.0722 14.9081 15.4722 15.1181 15.0422 15.5481L13.2022 17.3881C10.3722 15.9481 8.05223 13.6381 6.61223 10.7981L8.46223 8.94807C8.89223 8.51807 9.10223 7.91807 9.03223 7.30807L8.74223 4.78807C8.62223 3.77807 7.77223 3.01807 6.75223 3.01807H5.02223C3.89223 3.01807 2.95223 3.95807 3.02223 5.08807C3.55223 13.6281 10.3822 20.4481 18.9122 20.9781C20.0422 21.0481 20.9822 20.1081 20.9822 18.9781V17.2481C20.9922 16.2381 20.2322 15.3881 19.2222 15.2681Z" fill="var(--basic-lightgreen)" />
+                        </svg>
+                        <a class="footer__contacts-text" href="tel:88362455911">8 (8362) 45-59-11</a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4ZM13.06 12.34L19.6 8.25C19.85 8.09 20 7.82 20 7.53C20 6.86 19.27 6.46 18.7 6.81L12 11L5.3 6.81C4.73 6.46 4 6.86 4 7.53C4 7.82 4.15 8.09 4.4 8.25L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34Z" fill="var(--basic-lightgreen)" />
+                        </svg>
+                        <a class="footer__contacts-text" href="mailto:415080@mail.ru">415080@mail.ru</a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 9.26502C5 5.39502 8.13 2.26502 12 2.26502C15.87 2.26502 19 5.39502 19 9.26502C19 13.435 14.58 19.185 12.77 21.375C12.37 21.855 11.64 21.855 11.24 21.375C9.42 19.185 5 13.435 5 9.26502ZM9.5 9.26502C9.5 10.645 10.62 11.765 12 11.765C13.38 11.765 14.5 10.645 14.5 9.26502C14.5 7.88502 13.38 6.76502 12 6.76502C10.62 6.76502 9.5 7.88502 9.5 9.26502Z" fill="var(--basic-lightgreen)" />
+                        </svg>
+                        <span class="footer__contacts-text">г. Йошкар-Ола, ул.Ломоносова, 2Г</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="popular-products">
+                <h3 class="popular-products__title">Популярные виды семян:</h3>
+                <ul class="popular-products__list">
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Газонные травы оптом</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Горчица белая (желтая)</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Горох</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Многолетние травы</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Зерновые культуры</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Пшеница</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Рапс</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Мятлик луговой</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Фацелия оптом</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Овес</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Кормовая свекла</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Медоносы</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Кукуруза</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Ячмень</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Клевер белый купить</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copyright">&copy; ООО «Русское поле», 2020. Еж,Коптельня</p>
+    </div>
+</footer>
+
+<!-- inject:js -->
+<!-- endinject -->
+</body>
+</html>

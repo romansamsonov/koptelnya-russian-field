@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no, viewport-fit=cover">
+    <title>Main Page</title>
+
+    <!-- Start Safari Nomodule Fix -->
+    <script async>(function () {
+        var a = document, b = a.createElement("script");
+        if (!("noModule" in b) && "onbeforeload" in b) {
+            var c = !1;
+            a.addEventListener("beforeload", function (a) {
+                if (a.target === b) c = !0; else if (!a.target.hasAttribute("nomodule") || !c) return;
+                a.preventDefault()
+            }, !0), b.type = "module", b.src = ".", a.head.appendChild(b), b.remove()
+        }
+    })();</script>
+    <!-- End Safari Nomodule Fix -->
+
+    <!-- font-preload:woff2 -->
+    <!-- endinject -->
+
+    <!-- css-preload:css -->
+    <!-- endinject -->
+
+    <!-- modulepreload:js -->
+    <!-- endinject -->
+
+    <!-- inject:css -->
+    <!-- endinject -->
+</head>
+<body>
+<div style="height: 0; width: 0; position: absolute; visibility: hidden">
+    <!-- inject:svg -->
+    <!-- endinject -->
+</div>
+
+<header class="header">
+    <div class="hamburger"></div>
+    <a href="" class="header__logo logo">
+        <img src="svg/logo.svg" width="155" height="36" alt="Логотип компании Русское поле">
+    </a>
+    <ul class="nav">
+        <li class="nav__item">
+            <a class="nav__link" href="">Каталог</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="">Прайс-лист</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="">О компании</a>
+        </li>
+        <li class="nav__item">
+            <a class="nav__link" href="">Контакты</a>
+        </li>
+        <li class="nav__item">
+            <a href="tel:88362455911" class="nav__link nav__link_phone">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.0404 13.6386L15.2125 13.3157C14.5333 13.2378 13.8653 13.4716 13.3866 13.9503L11.338 15.9989C8.18723 14.3956 5.60425 11.8238 4.00102 8.66188L6.06072 6.60218C6.53947 6.12344 6.77327 5.45542 6.69533 4.77628L6.37246 1.97063C6.23886 0.846147 5.29251 0 4.15689 0H2.23079C0.972706 0 -0.0738448 1.04655 0.00408987 2.30464C0.594166 11.8127 8.19836 19.4057 17.6953 19.9958C18.9533 20.0737 19.9999 19.0272 19.9999 17.7691V15.843C20.011 14.7185 19.1649 13.7722 18.0404 13.6386Z" fill="var(--basic-darkgray)" />
+                </svg>
+                8 (8362) 45-59-11
+            </a>
+        </li>
+    </ul>
+    <div class="header__info">
+        <form action="" method="get" class="search">
+            <label for="search" class="search__label"></label>
+            <input id="search" class="search__input" type="search" name="search" placeholder="Поиск:">
+            <button class="search__button" type="submit">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.2 1.6C4.10721 1.6 1.6 4.10721 1.6 7.2C1.6 10.2928 4.10721 12.8 7.2 12.8C10.2928 12.8 12.8 10.2928 12.8 7.2C12.8 4.10721 10.2928 1.6 7.2 1.6ZM0 7.2C0 3.22355 3.22355 0 7.2 0C11.1765 0 14.4 3.22355 14.4 7.2C14.4 11.1765 11.1765 14.4 7.2 14.4C3.22355 14.4 0 11.1765 0 7.2Z" fill="var(--basic-gray)" />
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.1542 11.1543C11.4667 10.8419 11.9732 10.8419 12.2856 11.1543L15.7656 14.6343C16.078 14.9468 16.078 15.4533 15.7656 15.7657C15.4532 16.0781 14.9467 16.0781 14.6342 15.7657L11.1542 12.2857C10.8418 11.9733 10.8418 11.4667 11.1542 11.1543Z" fill="var(--basic-gray)" />
+                </svg>
+            </button>
+        </form>
+        <a href="#" class="header__cart">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4.6665 14.6087C4.6665 13.8403 5.26346 13.2174 5.99984 13.2174C6.73622 13.2174 7.33317 13.8403 7.33317 14.6087C7.33317 15.3771 6.73622 16 5.99984 16C5.26346 16 4.6665 15.3771 4.6665 14.6087Z" fill="var(--basic-gray)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14.6087C12 13.8403 12.597 13.2174 13.3333 13.2174C14.0697 13.2174 14.6667 13.8403 14.6667 14.6087C14.6667 15.3771 14.0697 16 13.3333 16C12.597 16 12 15.3771 12 14.6087Z" fill="var(--basic-gray)" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0.695652C0 0.311454 0.298477 0 0.666667 0H3.33333C3.65108 0 3.92467 0.234007 3.98704 0.559126L4.54695 3.47826H15.3333C15.532 3.47826 15.7203 3.57073 15.847 3.73047C15.9736 3.89021 16.0254 4.10058 15.9882 4.30423L14.9206 10.146C14.8291 10.6264 14.5787 11.0579 14.213 11.3651C13.8492 11.6707 13.3944 11.8337 12.9276 11.8261H6.4591C5.99225 11.8337 5.53747 11.6707 5.17365 11.3651C4.80817 11.058 4.55776 10.6267 4.46622 10.1466C4.46618 10.1464 4.46626 10.1467 4.46622 10.1466L3.35253 4.34031C3.34801 4.32111 3.34425 4.30159 3.3413 4.28179L2.78688 1.3913H0.666667C0.298477 1.3913 0 1.07985 0 0.695652ZM4.81382 4.86957L5.77389 9.87491C5.80437 10.035 5.88786 10.1789 6.00974 10.2813C6.13162 10.3837 6.28413 10.438 6.44056 10.4349L6.45333 10.4348H12.9333L12.9461 10.4349C13.1025 10.438 13.255 10.3837 13.3769 10.2813C13.4982 10.1794 13.5815 10.0364 13.6123 9.87714L14.5275 4.86957H4.81382Z" fill="var(--basic-gray)" />
+            </svg>
+        </a>
+        <a href="tel:88362455911" class="header__button button button_color-green">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.0404 13.6386L15.2125 13.3157C14.5333 13.2378 13.8653 13.4716 13.3866 13.9503L11.338 15.9989C8.18723 14.3956 5.60425 11.8238 4.00102 8.66188L6.06072 6.60218C6.53947 6.12344 6.77327 5.45542 6.69533 4.77628L6.37246 1.97063C6.23886 0.846147 5.29251 0 4.15689 0H2.23079C0.972706 0 -0.0738448 1.04655 0.00408987 2.30464C0.594166 11.8127 8.19836 19.4057 17.6953 19.9958C18.9533 20.0737 19.9999 19.0272 19.9999 17.7691V15.843C20.011 14.7185 19.1649 13.7722 18.0404 13.6386Z" fill="var(--basic-darkgray)" />
+            </svg>
+            8 (8362) 45-59-11
+        </a>
+    </div>
+</header>
+
+<main>
+    <section class="contacts">
+        <h1 class="hero__title">Контактная информация</h1>
+        <div class="contacts__wrapper">
+            <div class="contacts__info">
+                <p class="contacts__subtitle">Вы можете связаться с нами по одному из следующих контактов:</p>
+                <ul class="contacts__list">
+                    <li class="contacts__list-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 9.26502C5 5.39502 8.13 2.26502 12 2.26502C15.87 2.26502 19 5.39502 19 9.26502C19 13.435 14.58 19.185 12.77 21.375C12.37 21.855 11.64 21.855 11.24 21.375C9.42 19.185 5 13.435 5 9.26502ZM9.5 9.26502C9.5 10.645 10.62 11.765 12 11.765C13.38 11.765 14.5 10.645 14.5 9.26502C14.5 7.88502 13.38 6.76502 12 6.76502C10.62 6.76502 9.5 7.88502 9.5 9.26502Z" fill="var(--basic-green)" />
+                        </svg>
+                        Россия,г. Йошкар-Ола, ул.Ломоносова, 2Г
+                    </li>
+                    <li class="contacts__list-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2222 15.2681L16.6822 14.9781C16.0722 14.9081 15.4722 15.1181 15.0422 15.5481L13.2022 17.3881C10.3722 15.9481 8.05223 13.6381 6.61223 10.7981L8.46223 8.94807C8.89223 8.51807 9.10223 7.91807 9.03223 7.30807L8.74223 4.78807C8.62223 3.77807 7.77223 3.01807 6.75223 3.01807H5.02223C3.89223 3.01807 2.95223 3.95807 3.02223 5.08807C3.55223 13.6281 10.3822 20.4481 18.9122 20.9781C20.0422 21.0481 20.9822 20.1081 20.9822 18.9781V17.2481C20.9922 16.2381 20.2322 15.3881 19.2222 15.2681Z" fill="var(--basic-green)" />
+                        </svg>
+                        <a class="contacts__link contacts__link_darkgray" href="tel:88362455911">8 (8362) 45-59-11</a>,
+                        <a class="contacts__link contacts__link_darkgray" href="tel:88362740758">74-07-58</a>
+                    </li>
+                    <li class="contacts__list-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4ZM13.06 12.34L19.6 8.25C19.85 8.09 20 7.82 20 7.53C20 6.86 19.27 6.46 18.7 6.81L12 11L5.3 6.81C4.73 6.46 4 6.86 4 7.53C4 7.82 4.15 8.09 4.4 8.25L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34Z" fill="var(--basic-green)" />
+                        </svg>
+                        <a class="contacts__link contacts__link_black" href="mailto:415080@mail.ru">415080@mail.ru</a>
+                    </li>
+                </ul>
+                <a class="contacts__button button button_color-green" href="">Отправить заявку на звонок</a>
+            </div>
+            <script class="contacts__map" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac7fd63943e5691997da6d5fb92fb7b2a01466c88bd74da7bf7db6c22e539bab9&amp;width=100%25&amp;height=338&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__container">
+            <div class="footer__contacts">
+                <a href="" class="footer__logo logo">
+                    <img src="svg/logo.svg" width="155" height="36" alt="Логотип компании Русское поле">
+                </a>
+                <h3 class="visually-hidden">Контактная информация</h3>
+                <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2222 15.2681L16.6822 14.9781C16.0722 14.9081 15.4722 15.1181 15.0422 15.5481L13.2022 17.3881C10.3722 15.9481 8.05223 13.6381 6.61223 10.7981L8.46223 8.94807C8.89223 8.51807 9.10223 7.91807 9.03223 7.30807L8.74223 4.78807C8.62223 3.77807 7.77223 3.01807 6.75223 3.01807H5.02223C3.89223 3.01807 2.95223 3.95807 3.02223 5.08807C3.55223 13.6281 10.3822 20.4481 18.9122 20.9781C20.0422 21.0481 20.9822 20.1081 20.9822 18.9781V17.2481C20.9922 16.2381 20.2322 15.3881 19.2222 15.2681Z" fill="var(--basic-lightgreen)" />
+                        </svg>
+                        <a class="footer__contacts-text" href="tel:88362455911">8 (8362) 45-59-11</a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4ZM13.06 12.34L19.6 8.25C19.85 8.09 20 7.82 20 7.53C20 6.86 19.27 6.46 18.7 6.81L12 11L5.3 6.81C4.73 6.46 4 6.86 4 7.53C4 7.82 4.15 8.09 4.4 8.25L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34Z" fill="var(--basic-lightgreen)" />
+                        </svg>
+                        <a class="footer__contacts-text" href="mailto:415080@mail.ru">415080@mail.ru</a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 9.26502C5 5.39502 8.13 2.26502 12 2.26502C15.87 2.26502 19 5.39502 19 9.26502C19 13.435 14.58 19.185 12.77 21.375C12.37 21.855 11.64 21.855 11.24 21.375C9.42 19.185 5 13.435 5 9.26502ZM9.5 9.26502C9.5 10.645 10.62 11.765 12 11.765C13.38 11.765 14.5 10.645 14.5 9.26502C14.5 7.88502 13.38 6.76502 12 6.76502C10.62 6.76502 9.5 7.88502 9.5 9.26502Z" fill="var(--basic-lightgreen)" />
+                        </svg>
+                        <span class="footer__contacts-text">г. Йошкар-Ола, ул.Ломоносова, 2Г</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="popular-products">
+                <h3 class="popular-products__title">Популярные виды семян:</h3>
+                <ul class="popular-products__list">
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Газонные травы оптом</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Горчица белая (желтая)</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Горох</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Многолетние травы</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Зерновые культуры</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Пшеница</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Рапс</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Мятлик луговой</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Фацелия оптом</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Овес</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Кормовая свекла</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Медоносы</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Кукуруза</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Ячмень</a>
+                    </li>
+                    <li class="popular-products__list-item">
+                        <a class="popular-products__link" href="">Клевер белый купить</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="footer__copyright">&copy; ООО «Русское поле», 2020. Еж,Коптельня</p>
+    </div>
+</footer>
+
+<!-- inject:js -->
+<!-- endinject -->
+</body>
+</html>

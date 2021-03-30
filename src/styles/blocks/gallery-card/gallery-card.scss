@@ -1,0 +1,23 @@
+.gallery-card {
+  box-shadow: -5px 0px 20px rgba(157, 157, 157, 0.25);
+  border-radius: 15px;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  &__name {
+    padding: 25px 30px;
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--basic-darkgray);
+  }
+}

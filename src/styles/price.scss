@@ -1,0 +1,124 @@
+@import "reset/reset";
+@import "vars/vars";
+@import "blocks/button/button";
+@import "utils/utils";
+@import "blocks/header/header";
+@import "blocks/footer/footer";
+@import "blocks/hero/hero";
+@import "blocks/section/section";
+
+.price {
+  background-color: var(--basic-white);
+  border: 1px solid var(--background-image-color);
+  border-radius: 10px;
+  margin: 40px 0;
+
+  &__header {
+    min-height: 90px;
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--basic-gray);
+    border-bottom: 1px solid var(--underline-footer);
+  }
+
+  &__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 235px;
+    grid-gap: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 17px 20px;
+
+    &:nth-child(even) {
+      background-color: var(--list-numbering);
+    }
+
+    &-cell {
+      font-family: var(--main-font-stack);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--basic-darkgray);
+
+      &_green {
+        color: var(--basic-green);
+      }
+
+      &_bold {
+        font-weight: 900;
+      }
+    }
+  }
+
+  &__button {
+    text-align: right;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .price {
+    &__row {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    &__header-item:last-child {
+      display: none;
+    }
+
+    &__row-button {
+      grid-column: 3 / 5;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .price {
+    &__row {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      text-align: left;
+
+      &-cell {
+        &::before {
+          content: attr(aria-label);
+          font-family: var(--main-font-stack);
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: var(--basic-gray);
+          text-align: left;
+        }
+
+        &_green {
+          text-decoration: none;
+        }
+      }
+    }
+
+    &__header {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .price {
+    &__button {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__row-button {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}

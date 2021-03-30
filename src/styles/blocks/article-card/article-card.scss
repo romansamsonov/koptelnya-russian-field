@@ -1,0 +1,40 @@
+.article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 400px;
+  background-color: var(--basic-white);
+  border-radius: 10px;
+  box-shadow: -5px 0px 20px rgba(157, 157, 157, 0.25);
+
+  &__image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: auto;
+  }
+
+  &__title {
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--basic-darkgray);
+    padding: 27px 15px 16px 30px;
+  }
+
+  &__description {
+    min-height: 139px;
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-darkgray);
+    padding: 0 15px 18px 30px;
+  }
+
+  &__link {
+    margin: auto auto 31px 30px;
+  }
+}

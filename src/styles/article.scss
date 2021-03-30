@@ -1,0 +1,60 @@
+@import "reset/reset";
+@import "vars/vars";
+@import "blocks/button/button";
+@import "utils/utils";
+@import "blocks/header/header";
+@import "blocks/footer/footer";
+@import "blocks/hero/hero";
+@import "blocks/section/section";
+@import "blocks/article-card/article-card";
+
+.article {
+  &__title {
+    position: relative;
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--basic-darkgray);
+    margin-top: 30px;
+    margin-bottom: 12px;
+  }
+
+  &__list {
+    counter-reset: number;
+    margin-top: 20px;
+
+    &-item::before {
+      counter-increment: number;
+      content: counters(number, ".") " ";
+      display: inline-block;
+      padding: 2px 8px 3px;
+      margin-right: 10px;
+      font-family: var(--additional-font-stack);
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      color: var(--list-numbering);
+      background-color: var(--basic-lightgreen);
+      border: 3px solid var(--list-numbering);
+      border-radius: 50%;
+    }
+  }
+
+  &__link {
+    margin-top: 12px;
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-green);
+    text-decoration: none;
+
+    &:hover, &:focus {
+      color: var(--basic-darkgreen);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import "hamburger";
+@import "logo";
+@import "nav";
+@import "info";
+
+.header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  align-items: center;
+  min-height: 68px;
+  padding: 0 30px;
+  background-color: var(--basic-white);
+  box-shadow: -5px 0px 20px rgba(157, 157, 157, 0.25);
+}
+
+@media screen and (max-width: 1280px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header {
+    padding: 0 10px;
+  }
+}

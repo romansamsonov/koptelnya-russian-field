@@ -1,0 +1,44 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  font-family: var(--main-font-stack);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 10px 31px;
+  border: 1px solid transparent;
+  border-radius: 35px;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+
+  &_color-transparent-green {
+    color: var(--basic-green);
+    background-color: transparent;
+    border-color: var(--basic-green);
+
+    &:hover, &:focus {
+      color: var(--basic-white);
+      background-color: var(--basic-green);
+    }
+  }
+
+  &_color-green {
+    color: var(--basic-white);
+    background-color: var(--basic-green);
+    border-color: var(--basic-green);
+
+    &:hover, &:focus {
+      background-color: var(--basic-darkgreen);
+      border-color: var(--basic-darkgreen);
+    }
+  }
+
+  &_size-medium {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

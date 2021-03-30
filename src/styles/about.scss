@@ -1,0 +1,64 @@
+@import "reset/reset";
+@import "vars/vars";
+@import "blocks/button/button";
+@import "utils/utils";
+@import "blocks/header/header";
+@import "blocks/footer/footer";
+@import "blocks/hero/hero";
+@import "blocks/section/section";
+@import "blocks/gallery-card/gallery-card";
+
+.about {
+  &__wrapper {
+    margin-top: 40px;
+  }
+
+  &__title {
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--basic-darkgray);
+  }
+
+  &__map {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 20px 0;
+    background-color: var(--background-image-color);
+    background-image: url("../images/about-map.png");
+  }
+
+  &__gallery {
+    margin: 20px 0;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 20px;
+    margin: 20px 0;
+  }
+
+  &__certificate {
+    &-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 127px;
+    background-color: var(--basic-lightgray);
+
+    &-image {
+      mix-blend-mode: darken;
+    }
+  }
+}

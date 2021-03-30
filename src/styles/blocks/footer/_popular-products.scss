@@ -1,0 +1,36 @@
+.popular-products__title {
+  font-family: var(--main-font-stack);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  color: var(--basic-darkgray);
+  margin-bottom: 22px;
+}
+
+.popular-products__list {
+  column-count: 3;
+}
+
+@media screen and (max-width: 1024px) {
+  .popular-products__list {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .popular-products__list {
+    column-count: 1;
+  }
+}
+
+.popular-products__link {
+  display: flex;
+  font-family: var(--main-font-stack);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-green);
+  margin-bottom: 8px;
+}

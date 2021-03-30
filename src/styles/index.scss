@@ -1,0 +1,26 @@
+@import "reset/reset";
+@import "vars/vars";
+@import "blocks/button/button";
+@import "utils/utils";
+@import "blocks/header/header";
+@import "blocks/footer/footer";
+@import "blocks/hero/hero";
+@import "blocks/achievement/achievement";
+@import "blocks/section/section";
+@import "blocks/category-card/category-card";
+@import "blocks/article-card/article-card";
+
+.articles-main-page {
+  display: flex;
+  flex-direction: column;
+
+  &__button {
+    margin: 40px auto;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .articles-main-page__button {
+    margin: 20px auto;
+  }
+}

@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  &__close {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    padding: 7px;
+    background-color: var(--basic-white);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 4px;
+      width: 7px;
+      height: 1px;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 4px;
+      width: 7px;
+      height: 1px;
+      transform: rotate(-45deg);
+    }
+
+    &_darkgray {
+      border-color: var(--basic-darkgray);
+
+      &::before, &::after {
+        background-color: var(--basic-darkgray);
+      }
+    }
+
+    &_green {
+      border-color: var(--basic-green);
+
+      &::before, &::after {
+        background-color: var(--basic-green);
+      }
+    }
+  }
+}

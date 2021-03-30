@@ -1,0 +1,28 @@
+.product-card {
+  box-shadow: -6px 3px 13px rgba(213, 213, 213, 0.25);
+  border-radius: 10px;
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__image {
+    background-color: var(--background-image-color);
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--basic-gray);
+    background-color: var(--basic-white);
+    border-radius: 0 0 10px 10px;
+  }
+}

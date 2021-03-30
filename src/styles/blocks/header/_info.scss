@@ -1,0 +1,118 @@
+.header__info {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .header__info {
+    margin-left: 0;
+
+    &.search_active {
+      width: 80%;
+    }
+  }
+}
+
+.search {
+  position: relative;
+  width: 0;
+  background-color: var(--basic-lightgray);
+  padding-right: 32px;
+  border-radius: 35px;
+
+  &__input {
+    visibility: hidden;
+    width: 32px;
+    height: 32px;
+    font-family: var(--main-font-stack);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: var(--basic-darkgray);
+    background-color: var(--basic-lightgray);
+    padding: 7px 2px;
+    border-radius: 35px;
+    border: none;
+    outline: none;
+  }
+
+  &__button {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 0;
+    right: 0;
+    background-color: var(--basic-lightgray);
+    border-radius: 35px;
+    border: none;
+    padding: 7px;
+    cursor: pointer;
+
+    &:hover, &:focus {
+      background-color: var(--basic-green);
+
+      path {
+        fill: var(--basic-white);
+      }
+    }
+  }
+
+  &.search_active {
+    width: 100%;
+    padding-left: 13px;
+  }
+}
+
+.search_active {
+  & .search__input {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+.header__cart {
+  width: 32px;
+  height: 32px;
+  background-color: var(--basic-lightgray);
+  border-radius: 35px;
+  padding: 7px 8px;
+  margin-left: 20px;
+
+  &:hover, &:focus {
+    background-color: var(--basic-green);
+
+    path {
+      fill: var(--basic-white);
+    }
+  }
+}
+
+.header__button {
+  display: flex;
+  align-items: center;
+  font-family: var(--main-font-stack);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 9px 30px 9px 22px;
+  margin-left: 50px;
+  min-width: 215px;
+
+  svg {
+    margin-right: 16px;
+
+    path {
+      fill: var(--basic-white);
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .header__button {
+    display: none;
+  }
+}
